@@ -6,6 +6,9 @@ from sklearn.metrics import accuracy_score
 # Load dataset
 data = pd.read_csv("data/student_data.csv")
 
+# Data preprocessing
+data = data.dropna()
+
 # Input features and target
 X = data[["Hours_Studied", "Attendance", "Previous_Score", "Assignments"]]
 y = data["Final_Result"]
@@ -19,7 +22,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 model = DecisionTreeClassifier(random_state=42)
 model.fit(X_train, y_train)
 
-# Predict
+# Predict test data
 y_pred = model.predict(X_test)
 
 # Accuracy
@@ -31,7 +34,11 @@ print("Model: Decision Tree")
 print("Accuracy:", round(accuracy * 100, 2), "%")
 
 # Sample student prediction
-sample = [[5, 82, 63, 7]]
+sample = pd.DataFrame(
+    [[5, 82, 63, 7]],
+    columns=["Hours_Studied", "Attendance", "Previous_Score", "Assignments"]
+)
+
 prediction = model.predict(sample)
 
 print("Sample Student Prediction:", prediction[0])
