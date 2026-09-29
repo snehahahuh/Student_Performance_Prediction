@@ -1,0 +1,22 @@
+Student Performance Prediction Results
+
+Model Used: Decision Tree
+
+Input Features:
+1. Hours Studied
+2. Attendance
+3. Previous Score
+4. Assignments
+
+Sample Student:
+Hours Studied: 5
+Attendance: 82
+Previous Score: 63
+Assignments: 7
+
+Predicted Result: Pass
+
+Model Accuracy:
+100.0%
+
+The prototype successfully predicts student performance based on the given input features.
