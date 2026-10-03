@@ -1,22 +1,34 @@
 Student Performance Prediction Results
 
-Model Used: Decision Tree
+Model Used:
+XGBoost Classifier
+
+Dataset:
+Student Habits and Performance Dataset
 
 Input Features:
-1. Hours Studied
-2. Attendance
-3. Previous Score
-4. Assignments
+- Study Hours
+- Attendance
+- Previous Performance
+- Assignment/Academic Factors
+- Other student habit-related features
 
-Sample Student:
-Hours Studied: 5
-Attendance: 82
-Previous Score: 63
-Assignments: 7
+Methodology:
+1. Data Collection
+2. Data Preprocessing
+3. Feature Selection
+4. Model Training
+5. Model Testing
+6. Performance Evaluation
 
-Predicted Result: Pass
+Result:
+The XGBoost model performed well for student performance prediction.
 
-Model Accuracy:
-100.0%
+It provided accurate predictions based on the given student academic and habit-related features.
 
-The prototype successfully predicts student performance based on the given input features.
+The model successfully learned patterns from the dataset and was able to predict student performance effectively.
+
+XGBoost was selected because of its good predictive performance and ability to handle different features efficiently.
+
+Conclusion:
+The developed Student Performance Prediction prototype successfully uses the XGBoost model to predict student performance. The model shows good performance and can provide accurate predictions based on the available student-related features.
