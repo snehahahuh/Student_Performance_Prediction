@@ -32,3 +32,9 @@ The system predicts the student's final result as Pass or Fail.
 
 ## Future Scope
 The system can be improved using larger datasets, additional student-related features and different machine learning algorithms.
+
+## Results
+
+The XGBoost model performed well in predicting student performance. It provided accurate predictions based on the academic and habit-related features available in the dataset.
+
+The results demonstrate that machine learning can be effectively used for student performance prediction.
